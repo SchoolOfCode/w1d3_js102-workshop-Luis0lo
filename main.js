@@ -1,18 +1,20 @@
 console.log('the world is running!');
 
 //////////////////////////////STEP4 SOLUTION
-
+let myPassword = 'secret';
 let attempts = 0;
+// let userPassword = '';
 
-let myPassword1 = 'secret';
-
-let usePassword;
+function passInput() {
+  return prompt('enter password!');
+}
+// let userPassword = passInput();
+// console.log(userPassword)
 
 function authenticateUser() {
   while (attempts < 3) {
-    usePassword = prompt('Please enter the password');
-    if (myPassword1 === usePassword) {
-      alert('correct password!');
+    // userPassword = passInput();
+    if (myPassword === passInput()) {
       return true;
     } else {
       attempts++;
@@ -27,6 +29,34 @@ let isLoggedIn = authenticateUser();
 isLoggedIn
   ? console.log('TOP SECRET! you did it!')
   : console.log('Account Blocked');
+
+// //////////////////////////////STEP4 SOLUTION
+
+// let attempts = 0;
+
+// let myPassword1 = 'secret';
+
+// let usePassword;
+
+// function authenticateUser() {
+//   while (attempts < 3) {
+//     usePassword = prompt('Please enter the password');
+//     if (myPassword1 === usePassword) {
+//       alert('correct password!');
+//       return true;
+//     } else {
+//       attempts++;
+//       alert(`Try again, ${3 - attempts} attempts left`);
+//     }
+//   }
+//   return false;
+// }
+
+// let isLoggedIn = authenticateUser();
+
+// isLoggedIn
+//   ? console.log('TOP SECRET! you did it!')
+//   : console.log('Account Blocked');
 
 //////////////////////////////FIRST SOLUTION
 
