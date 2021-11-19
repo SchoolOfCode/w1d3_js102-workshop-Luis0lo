@@ -1,6 +1,6 @@
 console.log('the world is running!');
 
-//////////////////////////////STEP4 SOLUTION
+//////////////////////////////STEP5 SOLUTION
 let myPassword = 'secret';
 let attempts = 0;
 // let userPassword = '';
@@ -70,7 +70,7 @@ isLoggedIn
 //   usePassword = prompt('Please enter the password.');
 //   if (myPassword1 === usePassword) {
 //     alert('correct password! ');
-//     endloop; // if password is correct will exist the loop
+//     break; // if password is correct will exist the loop
 //   } else {
 //     attempts++;
 //     alert(`Try again, ${3 - attempts} attempts left`);
